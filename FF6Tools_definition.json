@@ -5131,7 +5131,8 @@
         "0xD8EE47-0xD8F000",
         "0xD9CC4C-0xD9CD10",
         "0xD9CD66-0xD9CD90",
-        "0xD9D1AD-0xDE0000",
+        "0xD9D1AD-0xD9D1B0",
+        "0xDDFFE9-0xDE0000",
         "0xDFD978-0xDFDA00",
         "0xE5FEC6-0xE60000",
         "0xE68492-0xE68780",
@@ -5143,8 +5144,7 @@
         "0xEDFCAA-0xEDFE00",
         "0xEDFFA7-0xEDFFD0",
         "0xEEAF01-0xEEB200",
-        "0xEFFBC8-0xEFFEF0",
-        "0x00F42E7B-0x01000000"
+        "0xEFFBC8-0xEFFEF0"
     ],
     "assembly": {
         "attackGraphics2bpp": {
@@ -9600,7 +9600,7 @@
         "mapLayouts": {
             "type": "array",
             "name": "Map Layouts",
-            "range": "0xF00000-0xF42E7B",
+            "range": "0xD9D1B0-0xDDFFE9",
             "stringTable": "mapLayouts",
             "canRelocate": true,
             "reference": [
@@ -9673,7 +9673,7 @@
                     }
                 ],
                 "pointerLength": 3,
-                "offset": "0xF00000"
+                "offset": "0xD9D1B0"
             }
         },
         "mapOverlayGraphics": {
@@ -9899,7 +9899,8 @@
                         "name": "Tile Layout",
                         "stringTable": "mapLayouts",
                         "begin": 13,
-                        "mask": "0x03FF"
+                        "mask": "0x03FF",
+                        "link": "mapLayouts[%i]"
                     },
                     "tileset1": {
                         "type": "property",
@@ -9967,7 +9968,8 @@
                         "name": "Tile Layout",
                         "stringTable": "mapLayouts",
                         "begin": 14,
-                        "mask": "0x0FFC"
+                        "mask": "0x0FFC",
+                        "link": "mapLayouts[%i]"
                     },
                     "tileset2": {
                         "type": "property",
@@ -10056,7 +10058,8 @@
                         "name": "Tile Layout",
                         "stringTable": "mapLayouts",
                         "begin": 15,
-                        "mask": "0x3FF0"
+                        "mask": "0x3FF0",
+                        "link": "mapLayouts[%i]"
                     },
                     "gfxLayer3": {
                         "type": "property",
@@ -13996,7 +13999,7 @@
         "worldPalette3": {
             "type": "assembly",
             "name": "Serpent Trench Palette",
-            "range": "0xD8E6BA-0xD8E800",
+            "range": "0xD8E6BA-0xD8E7B1",
             "format": [
                 "bgr555",
                 "ff6-lzss"
@@ -14102,8 +14105,8 @@
             }
         }
     },
-    "length": "0x400000",
-    "crc32": "0x8ABB76A1",
+    "length": "0x300000",
+    "crc32": "0xB390A377",
     "system": "sfc",
     "mode": "hiROM",
     "hierarchy": [
