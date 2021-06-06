@@ -276,24 +276,24 @@ endmacro
 ; - Walk through Walls in Towns/Dungeons.
 ; - Walk through Walls in Overworld.
 ;
-pushpc
-{
+;pushpc
+;{
     ; Towns/Dungeons
-    %nop2($c04e4e)
-    %nop2($c04e57)
-    %nop2($c04e6a)
-    %nop2($c04e73)
-    %nop2($c04e7e)
-    %nop2($c04e86)
-    %nop2($c04e8d)
-    org $c04ea9 : db $80 ; bra
+    ;%nop2($c04e4e)
+    ;%nop2($c04e57)
+    ;%nop2($c04e6a)
+    ;%nop2($c04e73)
+    ;%nop2($c04e7e)
+    ;%nop2($c04e86)
+    ;%nop2($c04e8d)
+    ;org $c04ea9 : db $80 ; bra
     ; Overworld
-    %nop2($ee1ee2)
-    %nop2($ee1f30)
-    %nop2($ee1f7e)
-    %nop2($ee1fcb)
-}
-pullpc
+    ;%nop2($ee1ee2)
+    ;%nop2($ee1f30)
+    ;%nop2($ee1f7e)
+    ;%nop2($ee1fcb)
+;}
+;pullpc
 
 ;===================================================================
 ; Section:
